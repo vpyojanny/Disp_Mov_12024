@@ -1,12 +1,63 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MediaBooking.Screens.Usuarios"
-             Title="Usuarios">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
-</ContentPage>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+           xmlns:local="clr-namespace:MediaBooking"
+            x:Class="MediaBooking.Screens.Usuarios">
+    <ContentPage Title="Usuarios"
+                 Padding="10">
+
+        <Grid RowDefinitions="100, Auto, *"
+              ColumnDefinitions=".75*, .25*">
+
+            <Label Grid.ColumnSpan="2"
+                   Text="Lista de Usuarios"
+                   FontSize="Title"
+                   HorizontalOptions="Center"/>
+
+            <Entry Grid.ColumnSpan="2" HeightRequest="50"
+                   x:Name="buscar"
+                   Placeholder="Buscar usuario"
+                   />
+
+            <CollectionView Grid.Row="2" Grid.ColumnSpan="2" x:Name="listaReservaciones" ItemsSource="{Binding ListaReservaciones}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame Padding="10" Margin="5" CornerRadius="10" BorderColor="LightGray" HasShadow="True">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="2*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <StackLayout Grid.Column="0" Orientation="Vertical" Spacing="5">
+                                    <Label FontAttributes="Bold" Text="{Binding Nombre}" />
+                                    <Label Text="{Binding Correo}" />
+                                    <Label Text="{Binding Telefono}" />
+                                    <Label Text="{Binding Direccion}" />
+                                    <Label FontAttributes="Bold"  TextColor="Green" Text="{Binding Rol}" />
+                                </StackLayout>
+
+                                <StackLayout Grid.Column="1" Orientation="Vertical" VerticalOptions="Start" Spacing="5">
+                                    <Button BackgroundColor="Green" Text="Editar" FontAttributes="Bold" Margin="5"/>
+                                    <Button BackgroundColor="Red" Text="Eliminar" FontAttributes="Bold" Margin="5"/>
+                                </StackLayout>
+                            </Grid>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+
+
+        </Grid>
+        
+    </ContentPage>
+
+    <ContentPage Title="Nuevo">
+        
+    </ContentPage>
+</TabbedPage>
