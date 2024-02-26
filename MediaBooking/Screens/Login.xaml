@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MediaBooking.Screens.Login"
+             Title="Login">
+
+    <Frame VerticalOptions="Center" HorizontalOptions="Center" Margin="20">
+        <Grid RowDefinitions="250, Auto, *">
+            <TableView Grid.Row="0" VerticalOptions="Center" Intent="Form">
+                <TableRoot>
+
+                    <TableSection>
+                        <ViewCell >
+                            <Image Source="logo.gif"/>
+                        </ViewCell>
+                        <ViewCell>
+                            <Label HorizontalOptions="Center" VerticalOptions="Center" FontSize="Title" Text="Inicie Sesión"/>
+                        </ViewCell>
+                        <EntryCell Label="Usuario" />
+                        <EntryCell Label="Contraseña"/>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+
+            <Button Grid.Row="1" VerticalOptions="End" Text="Iniciar Sesión" HeightRequest="50" BackgroundColor="Green"/>
+        </Grid>
+        
+        
+
+
+    </Frame>
+    
+</ContentPage>
