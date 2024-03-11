@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-           xmlns:local="clr-namespace:MediaBooking"
-            x:Class="MediaBooking.Screens.Usuarios">
-    <ContentPage Title="Usuarios"
-                 Padding="10">
 
-        <Grid RowDefinitions="100, Auto, *"
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+          
+            x:Class="MediaBooking.Screens.Usuarios" Title="Usuarios" Padding="10">
+    
+   
+    <Grid RowDefinitions="100, Auto, *"
               ColumnDefinitions=".75*, .25*">
 
             <Label Grid.ColumnSpan="2"
@@ -57,50 +57,4 @@
         
     </ContentPage>
 
-    <ContentPage Title="Nuevo" Padding="30">
 
-        <Grid RowDefinitions="50, Auto, *"
-              ColumnDefinitions=".75*, 25*">
-
-            <Label Grid.Row="0" Grid.ColumnSpan="2" Text="Nuevo usuario" FontSize="Title" HorizontalOptions="Center"/>
-
-            <TableView Grid.RowSpan="3" Grid.Row="1" Grid.ColumnSpan="2" Intent="Form">
-                <TableRoot>
-                    <TableSection >
-                        <EntryCell Placeholder="Nombre"/>
-                        <EntryCell Placeholder="Correo"/>
-                        <EntryCell Placeholder="Telefono"/>
-                        <EntryCell Placeholder="Direccion"/>
-                        <EntryCell Placeholder="Contraseña"/>
-                        <EntryCell Placeholder="Confirmar contraseña"/>
-                                   
-                        <ViewCell>
-                            <Grid RowDefinitions="Auto,Auto"
-                      ColumnDefinitions="0.5*,0.5*">
-                                <Label Text="Adminstrador"
-                           Margin="10,10,0,0"/>
-                                <Switch ThumbColor="Green" Grid.Column="1"
-                            HorizontalOptions="End" />
-                           
-                            </Grid>
-                        </ViewCell>
-                    </TableSection>
-
-                   
-                </TableRoot>
-            </TableView>
-
-            <Button VerticalOptions="End" Grid.Row="2" Grid.ColumnSpan="2"  HeightRequest="50" BackgroundColor="Green" Text="Agregar"/>
-
-
-
-
-
-        </Grid>
-
-
-
-
-
-    </ContentPage>
-</TabbedPage>

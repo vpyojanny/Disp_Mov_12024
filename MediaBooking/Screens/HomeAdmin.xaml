@@ -1,0 +1,20 @@
+<Shell
+    x:Class="MediaBooking.Screens.HomeAdmin"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MediaBooking"
+    xmlns:screens="clr-namespace:MediaBooking.Screens"
+    Shell.FlyoutBehavior="Flyout"
+    >
+    <FlyoutItem Title="Inicio" Icon="icon_home.png">
+        <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
+    </FlyoutItem>
+    <FlyoutItem Title="Configuraciones" Icon="icon_settings.png">
+        <ShellContent ContentTemplate="{DataTemplate screens:Usuarios}" />
+    </FlyoutItem>
+    
+
+
+
+
+</Shell>

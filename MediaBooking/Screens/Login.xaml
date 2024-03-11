@@ -3,26 +3,26 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MediaBooking.Screens.Login"
              Title="Login">
-
+    
+     
     <Frame VerticalOptions="Center" HorizontalOptions="Center" Margin="20">
-        <Grid RowDefinitions="250, Auto, *">
-            <TableView Grid.Row="0" VerticalOptions="Center" Intent="Form">
-                <TableRoot>
+        <Grid ColumnDefinitions=".25*, .25*, .25*, .25*" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="75"/>
+            </Grid.RowDefinitions>
+            <Image VerticalOptions="Start" Grid.ColumnSpan="4" Grid.Row="0" Source="logo.gif"/>
 
-                    <TableSection>
-                        <ViewCell >
-                            <Image Source="logo.gif"/>
-                        </ViewCell>
-                        <ViewCell>
-                            <Label HorizontalOptions="Center" VerticalOptions="Center" FontSize="Title" Text="Inicie Sesión"/>
-                        </ViewCell>
-                        <EntryCell Label="Usuario" />
-                        <EntryCell Label="Contraseña"/>
-                    </TableSection>
-                </TableRoot>
-            </TableView>
-
-            <Button Grid.Row="1" VerticalOptions="End" Text="Iniciar Sesión" HeightRequest="50" BackgroundColor="Green"/>
+            <Label Grid.ColumnSpan="4" Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Title" Text="Inicie Sesión"/>
+            <Entry Grid.ColumnSpan="4" Grid.Row="2" x:Name="usuario" Placeholder="Usuario"/>
+            <Entry Grid.Column="0" Grid.ColumnSpan="3"  Grid.Row="3" x:Name="psswd" Placeholder="Contraseña" IsPassword="True"/>
+            <ImageButton Clicked="OnToggleButtonClicked" Grid.ColumnSpan="4" Grid.Column="3" Grid.Row="3" Source="toggle.png" HeightRequest="25"/>
+            <Button Clicked="ValidarUsuario" Grid.ColumnSpan="2" Grid.Row="4" Text="Iniciar Sesión" HeightRequest="50" Margin="2" BackgroundColor="Green"/>
+            <ImageButton Source="huella.png" Grid.ColumnSpan="2" Clicked="LoginBiometrics" Grid.Column="2" Grid.Row="4" HeightRequest="50" Margin="2"/>
+            
         </Grid>
         
         

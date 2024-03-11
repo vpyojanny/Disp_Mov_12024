@@ -3,7 +3,7 @@ using System.Collections.ObjectModel;
 
 namespace MediaBooking.Screens;
 
-public partial class Usuarios : TabbedPage
+public partial class Usuarios : ContentPage
 {
 
     public ObservableCollection<Reservaciones> ListaReservaciones { get; set; }
