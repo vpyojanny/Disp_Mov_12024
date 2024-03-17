@@ -60,7 +60,7 @@ public partial class Login : ContentPage
 			{
 				
 
-                Application.Current.MainPage = new NavigationPage(new Screens.HomeAdmin());
+                Application.Current.MainPage = new Screens.HomeAdmin();
             }
 		}
 

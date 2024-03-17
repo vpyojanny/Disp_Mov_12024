@@ -28,5 +28,9 @@
 	</array>
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/appicon.appiconset</string>
+
+
+	<key>NSFaceIDUsageDescription</key>
+	<string>App need permission to use biometrics!</string>
 </dict>
 </plist>

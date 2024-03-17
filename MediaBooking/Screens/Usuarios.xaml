@@ -19,7 +19,7 @@
                    Placeholder="Buscar usuario"
                    />
 
-            <CollectionView Grid.Row="2" Grid.ColumnSpan="2" x:Name="listaReservaciones" ItemsSource="{Binding ListaReservaciones}">
+            <CollectionView Grid.Row="2" Grid.ColumnSpan="2" x:Name="listaReservaciones" ItemsSource="{Binding listaUsuarios}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <Frame Padding="10" Margin="5" CornerRadius="10" BorderColor="LightGray" HasShadow="True">
@@ -34,11 +34,11 @@
                                 </Grid.ColumnDefinitions>
 
                                 <StackLayout Grid.Column="0" Orientation="Vertical" Spacing="5">
-                                    <Label FontAttributes="Bold" Text="{Binding Nombre}" />
-                                    <Label Text="{Binding Correo}" />
-                                    <Label Text="{Binding Telefono}" />
-                                    <Label Text="{Binding Direccion}" />
-                                    <Label FontAttributes="Bold"  TextColor="Green" Text="{Binding Rol}" />
+                                    <Label FontAttributes="Bold" Text="{Binding Nombre_user}" />
+                                    <Label Text="{Binding Correo_user}" />
+                                    <Label Text="{Binding Telefono_user}" />
+                                    <Label Text="{Binding Direccion_user}" />
+                                    <Label FontAttributes="Bold"  TextColor="Green" Text="Admin" />
                                 </StackLayout>
 
                                 <StackLayout Grid.Column="1" Orientation="Vertical" VerticalOptions="Start" Spacing="5">
@@ -51,9 +51,13 @@
                 </CollectionView.ItemTemplate>
             </CollectionView>
 
+        <StackLayout Grid.Row="4" Grid.ColumnSpan="2" VerticalOptions="End" HorizontalOptions="Center">
+            <Button BackgroundColor="Green" Text="Agregar"/>
+        </StackLayout>
 
 
-        </Grid>
+
+    </Grid>
         
     </ContentPage>
 
