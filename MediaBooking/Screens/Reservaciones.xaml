@@ -3,10 +3,63 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MediaBooking.Screens.Reservaciones"
              Title="Reservaciones">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <Grid RowDefinitions="100, Auto, *"
+          ColumnDefinitions=".75*, .25*">
+
+        <Label Grid.ColumnSpan="2"
+               Text="Consulta de Reservaciones"
+               FontSize="Title"
+               HorizontalOptions="Center"/>
+
+        <Entry Margin="0, 10, 0, 0" Grid.ColumnSpan="2" HeightRequest="50"
+               x:Name="buscar"
+               Placeholder="Buscar reservación"
+               />
+
+        <CollectionView Grid.Row="2" Grid.ColumnSpan="2" x:Name="listadoReservas" ItemsSource="{Binding listaReservas}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame Padding="10" Margin="5" CornerRadius="10" BorderColor="LightGray" HasShadow="True">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <StackLayout Grid.Column="0" Orientation="Vertical" Spacing="5">
+                                <Label FontAttributes="Bold" Text="{Binding UsuarioReserva}" />
+                                <Label Text="{Binding Matricula}" />
+                                <Label Text="{Binding Asignatura}" />
+                                <Label Text="{Binding Aula}" />
+                                <Label Text="{Binding Telefono}" />
+                                <Label Text="{Binding Profesor}" />
+                                <Label Text="{Binding Fecha_Hora_Inicio}" />
+                                <Label Text="{Binding Fecha_Hora_Fin}" />
+                                <Label Text="{Binding Equipos}" />
+                                <Label Text="{Binding Auxiliar}" />
+                                <Label Text="{Binding Estado}" />
+                                <Label FontAttributes="Bold"  TextColor="Yellow" Text="Admin" />
+                            </StackLayout>
+
+                            <StackLayout Grid.Column="1" Orientation="Vertical" VerticalOptions="Start" Spacing="5">
+                                <Button BackgroundColor="Green" Text="Editar" FontAttributes="Bold" Margin="5"/>
+                                <Button BackgroundColor="Red" Text="Eliminar" FontAttributes="Bold" Margin="5"/>
+                            </StackLayout>
+                        </Grid>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <StackLayout Grid.Row="4" Grid.ColumnSpan="2" VerticalOptions="End" HorizontalOptions="Center">
+            <Button BackgroundColor="Green" Text="Agregar"/>
+        </StackLayout>
+
+
+
+    </Grid>
 </ContentPage>
