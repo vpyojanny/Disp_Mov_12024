@@ -1,0 +1,77 @@
+is_global = true
+build_property.TargetFramework = net7.0-windows10.0.19041.0
+build_property.TargetPlatformMinVersion = 10.0.17763.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 9A19103F-16F7-4668-BE54-9A1E7A4F7556
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MediaBooking
+build_property.ProjectDir = C:\Users\yojan\OneDrive\Documents\GitHub\DISP_MOV\Disp_Mov_12024\MediaBooking\
+
+[C:/Users/yojan/OneDrive/Documents/GitHub/DISP_MOV/Disp_Mov_12024/MediaBooking/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MediaBooking.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/yojan/OneDrive/Documents/GitHub/DISP_MOV/Disp_Mov_12024/MediaBooking/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MediaBooking.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/yojan/OneDrive/Documents/GitHub/DISP_MOV/Disp_Mov_12024/MediaBooking/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MediaBooking.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/yojan/OneDrive/Documents/GitHub/DISP_MOV/Disp_Mov_12024/MediaBooking/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MediaBooking.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/yojan/OneDrive/Documents/GitHub/DISP_MOV/Disp_Mov_12024/MediaBooking/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MediaBooking.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/yojan/OneDrive/Documents/GitHub/DISP_MOV/Disp_Mov_12024/MediaBooking/Screens/HomeAdmin.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MediaBooking.Screens.HomeAdmin.xaml
+build_metadata.AdditionalFiles.TargetPath = Screens\HomeAdmin.xaml
+build_metadata.AdditionalFiles.RelativePath = Screens\HomeAdmin.xaml
+
+[C:/Users/yojan/OneDrive/Documents/GitHub/DISP_MOV/Disp_Mov_12024/MediaBooking/Screens/Login.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MediaBooking.Screens.Login.xaml
+build_metadata.AdditionalFiles.TargetPath = Screens\Login.xaml
+build_metadata.AdditionalFiles.RelativePath = Screens\Login.xaml
+
+[C:/Users/yojan/OneDrive/Documents/GitHub/DISP_MOV/Disp_Mov_12024/MediaBooking/Screens/NuevoUsuario.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MediaBooking.Screens.NuevoUsuario.xaml
+build_metadata.AdditionalFiles.TargetPath = Screens\NuevoUsuario.xaml
+build_metadata.AdditionalFiles.RelativePath = Screens\NuevoUsuario.xaml
+
+[C:/Users/yojan/OneDrive/Documents/GitHub/DISP_MOV/Disp_Mov_12024/MediaBooking/Screens/Productos.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MediaBooking.Screens.Productos.xaml
+build_metadata.AdditionalFiles.TargetPath = Screens\Productos.xaml
+build_metadata.AdditionalFiles.RelativePath = Screens\Productos.xaml
+
+[C:/Users/yojan/OneDrive/Documents/GitHub/DISP_MOV/Disp_Mov_12024/MediaBooking/Screens/Reservaciones.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MediaBooking.Screens.Reservaciones.xaml
+build_metadata.AdditionalFiles.TargetPath = Screens\Reservaciones.xaml
+build_metadata.AdditionalFiles.RelativePath = Screens\Reservaciones.xaml
+
+[C:/Users/yojan/OneDrive/Documents/GitHub/DISP_MOV/Disp_Mov_12024/MediaBooking/Screens/Usuarios.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MediaBooking.Screens.Usuarios.xaml
+build_metadata.AdditionalFiles.TargetPath = Screens\Usuarios.xaml
+build_metadata.AdditionalFiles.RelativePath = Screens\Usuarios.xaml

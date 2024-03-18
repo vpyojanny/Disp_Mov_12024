@@ -12,7 +12,10 @@
     <FlyoutItem Title="Usuarios" Icon="icon_settings.png"> 
         <ShellContent ContentTemplate="{DataTemplate screens:Usuarios}" />
     </FlyoutItem>
-    
+    <FlyoutItem Title="Consulta de Reservaciones" Icon="icon_settings.png">
+        <ShellContent ContentTemplate="{DataTemplate screens:Reservaciones}" />
+    </FlyoutItem>
+
 
 
 
